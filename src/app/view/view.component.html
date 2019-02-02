@@ -1,0 +1,189 @@
+
+<div class="container-fluid">
+    <div class="rows">
+                         <!-- siderbar -->
+       <div class="col-md-3" style="height:700px; background-color: black ;margin-top: 25px">
+        <div class="col">
+                           <!-- search box -->
+          <input type="text" placeholder="Search here" style="width:70%; margin: 20px; background-color:whitesmoke">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        
+        <div class="col-md-12" style="margin-top:5px;">
+            <a style="color: aliceblue" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+          <!-- <button style="width: 150px;"> Dashboard</button> -->
+        </div>
+        <br><br>
+        <div class="col-md-12" style="margin-top:5px;">
+            <a style="color: aliceblue" routerLink="/user" routerLinkActive="active">User's</a>
+            <!-- <select id="opt" style="width: 150px;">
+              <option>User's</option>
+              <option>View</option>
+            </select> -->
+          </div>
+          <br><br>
+          <div class="col-md-12" style="margin-top:5px;">
+              <a style="color: aliceblue" routerLink="/ratings" routerLinkActive="active">Ratings</a>
+            <!-- <select id="opt" style="width: 150px;">
+              <option>Ratings</option>
+              <option>View All</option>
+            </select> -->
+          </div>
+          <br><br>
+          <div class="col-md-12" style="margin-top:5px;">
+              <a style="color: aliceblue" routerLink="/add" routerLinkActive="active">Master</a>
+              <!-- <select id="opt" style="width: 150px;">
+                  <option>Master</option>
+                  <option>Add Tab</option>
+                </select> -->
+            </div>
+       </div>
+                             <!-- content -->
+       <div class=" col-md-9" style="height:700px;  margin-top: 5px">
+                             <!-- header  -->
+          <div  style="height:100px;width:100%; background-color: blue">
+                            <!-- admin pannel -->
+              <h1>Admin Panel - Newz</h1> 
+              <select class="hselect" style="float:right">
+                
+                  <option selected value="Admin Name">Admin Name</option>
+                  <option value="post">post</option>
+                  <option value="date">date</option>
+                  <option value="place">place</option>
+                
+              </select>
+              <span class="glyphicon glyphicon-user" style="float:right"></span><br/>
+             </div>
+             <br><br>
+                              <!-- Dashboard -->
+    <div class="col-md-6">
+        <h4>User Details</h4>
+      </div>
+  <div class="col-md-6">
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search by Name or Email">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form> 
+    </div>
+  </div>
+  <div>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>
+            <span class="glyphicon glyphicon-thumbs-up"></span>
+            <span style="margin-left:5px;" class="glyphicon glyphicon-edit"></span>
+          </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <span class="glyphicon glyphicon-thumbs-up"></span>
+              <span style="margin-left:5px;" class="glyphicon glyphicon-edit"></span>
+            </td>
+          </tr>
+          <tr>
+              <td></td>
+              <td></td>
+              <td>
+                <span class="glyphicon glyphicon-thumbs-up"></span>
+                <span style="margin-left:5px;" class="glyphicon glyphicon-edit"></span>
+              </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  <span style="margin-left:5px;" class="glyphicon glyphicon-edit"></span>
+                </td>
+              </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+  </div>
+
+            
+            
+    <!-- </div>
+  </div> -->
+  
+  
+
+
+
+
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h4>User Details</h4>
+    </div>
+<div class="col-md-6">
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search by Name or Email">
+      <button type="submit"><i class="fa fa-search">Click</i></button>
+    </form> 
+  </div>
+</div>
+<div class="row">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+          <span style="margin-left:5px;" class="glyphicon glyphicon-edit"></span>
+        </td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>
+            <span class="glyphicon glyphicon-thumbs-up"></span>
+            <span style="margin-left:5px;" class="glyphicon glyphicon-edit"></span>
+          </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <span class="glyphicon glyphicon-thumbs-up"></span>
+              <span style="margin-left:5px;" class="glyphicon glyphicon-edit"></span>
+            </td>
+          </tr>
+          <tr>
+              <td></td>
+              <td></td>
+              <td>
+                <span class="glyphicon glyphicon-thumbs-up"></span>
+                <span style="margin-left:5px;" class="glyphicon glyphicon-edit"></span>
+              </td>
+            </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+ -->
