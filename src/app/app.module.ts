@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import { RatingsComponent } from './ratings/ratings.component';
 import { AddComponent } from './add/add.component';
+import { AddnewsComponent } from './addnews/addnews.component';
+import { UpdateComponent } from './update/update.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { AddComponent } from './add/add.component';
     LoginComponent,
     RegisterComponent,
     RatingsComponent,
-    AddComponent
+    AddComponent,
+    AddnewsComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,

@@ -56,7 +56,34 @@
              </div>
              <br><br>
                               <!-- Dashboard -->
-    <div class="col-md-6">
+                        
+                              <h3>User Details</h3>
+                              <br>
+                              <div class="table-responsive">          
+                                  <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Actions</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr *ngFor="let x of userdata; let i = index">
+                                        <td>{{i}}--------{{x.firstname}}</td>
+                                        <td>{{x.email}}</td>
+                                        <td>
+                                            <a [routerLink]="'/Update'" >Update</a>
+                                          <!--<a (click)="userUpdate()"><span class="glyphicon glyphicon-edit">edit</span></a>
+                                          <a routerLink="/Update/{{i}}" (click)="this.project.senddetails(i)"> <mat-icon>edit</mat-icon></a>-->
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  </div>
+
+                              
+   <!--  <div class="col-md-6">
         <h4>User Details</h4>
       </div>
   <div class="col-md-6">
@@ -111,7 +138,7 @@
               </tr>
       </tbody>
     </table>
-  </div>
+  </div>  -->
   </div>
   </div>
 

@@ -9,6 +9,8 @@ import { RatingsComponent } from './ratings/ratings.component';
 import { AddComponent } from './add/add.component';
 import { HomeComponent } from './home/home.component';
 import { from } from 'rxjs';
+import { UpdateComponent } from './update/update.component';
+import { AddnewsComponent } from './addnews/addnews.component';
 
 const appRoutes: Routes=[
   { path: '', component:LoginComponent},
@@ -18,7 +20,9 @@ const appRoutes: Routes=[
   { path: 'ratings', component: RatingsComponent},
   { path: 'add', component: AddComponent},
   { path: 'signup', component: RegisterComponent },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: 'update', component: UpdateComponent },
+  { path: 'addnews', component: AddnewsComponent }
 ];
 @NgModule({
     declarations: [],

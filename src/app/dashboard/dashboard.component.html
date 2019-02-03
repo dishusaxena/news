@@ -23,6 +23,10 @@
         </div>
         <br><br>
         <div class="col-md-12" style="margin-top:5px;">
+          <a style="color: aliceblue" routerLink="/update" routerLinkActive="active">Update User</a>
+        </div>
+        <br><br>
+        <div class="col-md-12" style="margin-top:5px;">
             <a style="color: aliceblue" routerLink="/ratings" routerLinkActive="active">Ratings</a>
           <!-- <select id="opt" style="width: 150px;">
             <option>Ratings</option>
@@ -36,6 +40,10 @@
                 <option>Master</option>
                 <option>Add Tab</option>
               </select> -->
+          </div>
+          <br><br>
+          <div class="col-md-12" style="margin-top:5px;">
+            <a style="color: aliceblue" routerLink="/addnews" routerLinkActive="active">Add News</a>
           </div>
      </div>
                            <!-- content -->
@@ -57,10 +65,13 @@
                             <!-- Dashboard -->
           
           <h2 class="dash">Dashboard</h2>
-          <div class="form-group" class="use">
-            <label for="user" style="width: 200px;">Total Users:  {{length}}</label>
-            <input type="text" class="form-control" id="user">
-          </div>
+
+          <h4>Total User   : {{userdata.length}}  </h4><br><br>
+          <input type="date">
+          <!-- <div class="form-group" class="use">
+            <label for="user" style="width: 200px;">Total Users:  {{length}}</label> -->
+            <!-- <input type="text" class="form-control" id="user"> -->
+          <!-- </div>
           <br><br>
 
           <div class="container">
@@ -134,7 +145,7 @@
                   </tbody>
                   </table>
               </div>
-          </div>
+          </div> -->
           <!--  <h3>Dashboard</h3>
           <textarea rows="10" cols="50">
 
@@ -143,7 +154,7 @@
 
           <input type="date" > -->
        
-     </div>
+     <!-- </div> -->
   </div>
 </div>
 

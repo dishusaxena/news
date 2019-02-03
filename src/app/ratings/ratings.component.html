@@ -55,7 +55,27 @@
              </div>
              <br><br>
                               <!-- Dashboard -->
-                              <table class="table table-bordered">
+                              <div class="table-responsive">          
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                        <th>UserName</th>&nbsp;&nbsp;&nbsp;
+                                        <th> Rating</th>
+                                     
+                                      
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr *ngFor="let x of userdata; let i = index">
+                                        <td>{{x.firstname}}</td>&nbsp;&nbsp;&nbsp;
+                                      <td><span class="fa fa-star checked"></span>&nbsp;&nbsp;{{x.rating}}</td>
+                                      
+                                     
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                </div>
+                              <!-- <table class="table table-bordered">
                                   <thead>
                                     <tr>
                                       <th>User Name</th>
@@ -64,8 +84,13 @@
                                   </thead>
                                   <tbody>
                                     <tr>
-                                      <td></td>
-                                      <td></td>
+                                      <td>Disha</td>
+                                      <td><span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        
+                                      </td>
                                     </tr>
                                     <tr>
                                         <td></td>
@@ -80,7 +105,7 @@
                                             <td></td>
                                           </tr>
                                   </tbody>
-                                </table>
+                                </table> -->
                               </div>
                             </div>
 

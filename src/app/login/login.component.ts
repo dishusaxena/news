@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ServicehttpService } from '../servicehttp.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -13,6 +14,11 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  /* ab;
+  bb;
+  bn:Subscription;
+  ac:Subscription; */
 
   loginUser(e){
     e.preventDefault();
@@ -28,6 +34,24 @@ export class LoginComponent implements OnInit {
     else{
       alert("please enter correct username and password");
     }
-  }
+
+  /*   this.ab = this.user.urating();
+    this.ac = this.ab.subscribe((req)=>{
+      console.log(req);
+      this.user.setuser(req);
+     
+   
+    });
+    console.log("hello");
+    this.bb = this.user.sequen();
+    this.bn = this.bb.subscribe((req)=>{
+      console.log(req);
+       this.user.setseq(req);
+     
+   
+    });*/
+  } 
+
+
 
 }

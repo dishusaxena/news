@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicehttpService } from '../servicehttp.service';
+import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
+import { UserData } from './UserData';
 
 @Component({
   selector: 'app-view',
@@ -7,9 +11,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private p:ServicehttpService, private r:Router) { }
+
+  //aruser;
+  userdata: UserData[];
+  s: Subscription;
+  u;
+ 
 
   ngOnInit() {
+    this.u = this.p.data;
+    this.s = this.u.subscribe(( data1)=>{
+      console.log(data1);
+      this.userdata=data1;
+      
+    },
+    (err) =>{
+      console.log(err);
+    },
+    () => {
+      console.log("completed");
+    }
+    ); 
+
+    //this.aruser = this.ss.returnuser();
   }
 
 }
