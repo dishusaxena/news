@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicehttpService } from '../servicehttp.service';
+import { UpdateUser } from './UpdateUser';
 
 @Component({
   selector: 'app-update',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdateComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ss:ServicehttpService) { }
+  
 
-  ngOnInit() {
-  }
+  /* ardetails = this.ss.senddetailss();
+  name = this.ardetails.firstname;
+  email = this.ardetails.email; 
+ 
+ psubmit(p){
+   {this.ss.resetpassword(this.email,p);
+ 
+   }
+ } */
 
-}
+ update(name,email,password){
+   let data = new UpdateUser(name.value,email.value,password.value);
+   this.ss.updateUser(data);
+ }
+ 
+   ngOnInit() {
+   }
+ }
+
+

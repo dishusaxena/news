@@ -14,11 +14,9 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  /* ab;
-  bb;
-  bn:Subscription;
-  ac:Subscription; */
+ab;
+n:Subscription;
+  
 
   loginUser(e){
     e.preventDefault();
@@ -29,28 +27,20 @@ export class LoginComponent implements OnInit {
     if(username == 'admin' && password == 'admin'){
       //alert("successfully log in!!");
       this.user.setUserLoggedIn();
-      this.r.navigate(['dashboard']);
+      //this.r.navigate(['dashboard']);
     }
     else{
       alert("please enter correct username and password");
     }
-
-  /*   this.ab = this.user.urating();
-    this.ac = this.ab.subscribe((req)=>{
-      console.log(req);
+    this.ab = this.user.urating();
+    this.n = this.ab.subscribe((req)=>{
+     
       this.user.setuser(req);
-     
-   
     });
-    console.log("hello");
-    this.bb = this.user.sequen();
-    this.bn = this.bb.subscribe((req)=>{
-      console.log(req);
-       this.user.setseq(req);
-     
-   
-    });*/
-  } 
+  
+    
+  }
+ 
 
 
 

@@ -1,10 +1,18 @@
+
 <div class="container">
-<div class="login" style="text-align: center;margin-top:100px">
+    <div class="loginbox">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7LYkYTDRuBHSRSvbj7ndQ6Ah4ChvBnn2Q7Ir8fkW6vV4nSRj" class="image">
+      
+      <div class="login" style="text-align: center">
+          <h1>Admin Login</h1>
   <form (submit)="loginUser($event)">
-    <input type="text" placeholder="Username" required="required" #username ><br><br>
-    <input type="password" placeholder="password" required="required" #password ><br><br>
+    <p>UserName</p>
+    <input type="text" placeholder="Enter username" required="required" #username ><br><br>
+    <p>Password</p>
+    <input type="password" placeholder="Enter password" required="required" #password ><br><br>
     <button type="submit" class="btn btn-primary">Login</button>
   </form>
 
+</div>
 </div>
 </div>

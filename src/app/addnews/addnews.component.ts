@@ -17,9 +17,15 @@ export class AddnewsComponent implements OnInit {
   b;
   c:Subscription;
 
+  n = new Date();
+  y= this.n.getFullYear();
+  m= this.n.getMonth()+1;
+  d= this.n.getDate();
+  da=this.y+","+this.m+","+this.d;
+
   crAndAdd( x:string, y:string, z:string, ab:string )
   {
-    this.a = new Addnews(x,y,z,ab);
+    this.a = new Addnews(x,y,z,ab,this.da);
     this.b = this.httpser.NewNews(this.a);
     this.c = this.b.subscribe((data) => {
     console.log(data); 
@@ -33,6 +39,8 @@ export class AddnewsComponent implements OnInit {
     //this.httpser.getTrend();
     this.r.navigate(['/dashboard']);
   }
+
+  
 
   ngOnInit() {
   }
